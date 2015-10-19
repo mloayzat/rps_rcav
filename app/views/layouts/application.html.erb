@@ -5,10 +5,49 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <!-- Connect to Bootstrap CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+  <!-- Connect to Font Awesome CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Connect to Bootstrap Javascript -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+  </style>
 </head>
 <body>
+ 
+<div class="container">
 
-<%= yield %>
+<hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8" >
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+ 				 <div class="btn-group" role="group">
+   					 <a href= "http://localhost:3000/rock"  class="btn btn-block btn-primary text-center ">Play Rock</a>
+ 				 </div>
+ 				 <div class="btn-group" role="group">
+   					 <a href= "http://localhost:3000/paper"  class="btn btn-block btn-info text-center ">Play Paper</a>
+  				 </div>
+  				 <div class="btn-group" role="group">
+    				<a href= "http://localhost:3000/scissors"  class="btn btn-block btn-primary text-center ">Play Scissors</a>
+ 				 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ <hr>
 
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
