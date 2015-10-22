@@ -14,13 +14,8 @@ class OptionsController < ApplicationController
     	end
 
 
-	@result_image =	if "Rock" == @move 
-    @result_image = "rock"
-        			elsif "Paper" == @move  
-    @result_image= "paper"
-       				elsif "Scissors" == @move
-    @result_image = "scissors"
-    	end
+	@result_image =	@move.downcase
+    
 
     @label_color =	if "Rock" == @move 
     @label_color = "warning"
@@ -47,13 +42,8 @@ class OptionsController < ApplicationController
     	end
 
 
-	@result_image =	if "Paper" == @move 
-    @result_image = "paper"
-        			elsif "Scissors" == @move  
-    @result_image= "scissors"
-       				elsif "Rock" == @move
-    @result_image = "rock"
-    	end
+	@result_image =	@move.downcase
+    
 
     @label_color =	if "Paper" == @move 
     @label_color = "warning"
@@ -80,14 +70,8 @@ class OptionsController < ApplicationController
     	end
 
 
-	@result_image =	if "Rock" == @move 
-    @result_image = "rock"
-        			elsif "Paper" == @move  
-    @result_image= "paper"
-       				elsif "Scissors" == @move
-    @result_image = "scissors"
-    	end
-
+	@result_image =	@move.downcase
+    
     @label_color =	if "Scissors" == @move 
     @label_color = "warning"
         			elsif "Rock" == @move  
